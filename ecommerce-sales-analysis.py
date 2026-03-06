@@ -19,7 +19,7 @@ from IPython.display import display
 
 df = pd.read_csv(DATA_PATH, encoding='latin1', low_memory=False)
 
-print("✅ File Loaded Successfully")
+print("File Loaded Successfully")
 print("Path:", DATA_PATH)
 print("Rows:", len(df))
 print("Columns:", list(df.columns))
@@ -131,7 +131,7 @@ monthly_summary.to_csv(monthly_file, index=False)
 if country_summary is not None:
     country_summary.to_csv(country_file, index=False)
 
-print("\n📁 Files Saved To:", OUTPUT_DIR)
+print("\n Files Saved To:", OUTPUT_DIR)
 
 # 7. Visualizations (default matplotlib colors)
 
@@ -165,7 +165,7 @@ if country_summary is not None:
     plt.tight_layout()
     plt.show()
 
-print("\n🎉 Analysis Complete!")
+print("\n Analysis Complete!")
 
 """The country-wise revenue chart shows that the United Kingdom dominates sales, contributing the vast majority of total revenue, while other countries like Germany, EIRE, and France have smaller but noticeable contributions.
 
